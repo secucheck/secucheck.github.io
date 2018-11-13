@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Title -->
+    <title>SecuCheck</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/core-img/favicon.ico">
+
+    <!-- Core Stylesheet -->
+	<link rel="stylesheet" href="style.css">
+	<!-- Latest compiled and minified CSS-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+		<!-- Navigacion start -->
+	<div id="custom-bootstrap-menu" class="navbar navbar-default  navbar-fixed-top" role="navigation">
+		<div class="container-fluid">
+			<div class="navbar-header"><a class="navbar-brand" href="index.html"><img style="margin-top: -8px;" src="img/secu-logo.png"/></a>
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-menubuilder"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+				</button>
+			</div>
+			<div class="collapse navbar-collapse navbar-menubuilder">
+				<ul class="nav navbar-nav navbar-left">
+					<li><a class="active" href="index.html">Home</a></li>
+							<li><a href="index.html#about-section">About</a></li>
+							<li><a href="index.html#publications-section">Publications</a></li>
+							<li><a href="index.html#team-section">Team</a></li>
+							<li><a href="index.html#partners-section">Partners</a></li>
+							<li><a href="index.html#contact-section">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- Navigation end -->
+	
+
+		<!--- About start -->
+		<div class="about" id="about-section">
+			<div class="container">
+			<h3>The Problem</h3>
+			<p>Static code analysis is a technology to detect various security vulnerabilities at implementation time. However, as studies show, developers reject <strong>static analysis tools</strong>, as they find them hard to configure such that they can operate efficiently in their application context. With their default parameters, most tools produce a high number of false warnings, while missing vulnerabilities that may be important. This demotivates the developers. The goal of this project is to reduce the gap between static analysis and software development, thereby improving the user experience of static analysis tools.</p>
+			
+			<p><strong>Security by design</strong> principles expect that developers can check their own code against security vulnerabilities before they push the code into production. Therefore, static analysis tools that are integrated in the developer’s IDEs can be of a great use. They help developers during development time to fix many security vulnerabilities. However, most of these tools are in early research phase and not mature enough to be used in practice.</p>
+			
+			<p><strong>To what extent can we reduce the gap between the domains of static analysis and software development?</strong> Within this project, we work on an approach for the automatic generation of security checkers based on vulnerability specifications. The project focuses on the detection of Java vulnerabilities.</p>
+			
+			<h3>Our Solution: SecuCheck</h3>
+			
+			<img src="img/process.png" class="image">
+			<p>The vulnerability specification and the program code are the inputs that a developer needs to provide to the generator of security checkers. The generator takes the vulnerability specification and produces a parameterized analysis for the user’s program code. We call this a security checker. For example, a developer selects a specification for SQL injection and wants to check a given code. The generator will execute the following steps :</p>
+			
+			<ol>
+				<li>select the appropriate static analysis, which in this example will be a taint analysis,</li>
+				<li>scan the code to infer the specific information, for example find the relevant methods, like sources, sinks and sanitizers, required for taint analysis,</li>
+				<li>parameterize the analysis (select call graph algorithm, choose forward or backward analysis, etc.),</li>
+				<li>run the analysis and</li>
+				<li>display the results.</li>
+			</ol>
+			</div>
+		</div>
+		<!--- About end -->
+
+		
+		<!--- Contact start -->
+		<div class="contact"  id="contact-section">
+			<div class="container">
+				<h1 class="h-white">Contact</h1>
+				<p>Goran Piskachev<br>Fraunhofer-Institut für Entwurfstechnick Mechatronik<br>Abteilung Softwaretechnik und IT-Sicherheit<br>Zukunftsmeile 1<br>33102</p>
+
+				<p><strong>e-Mail:</strong> <a href="mailto:info.deercreative@gmail.com" class="email">goran.piskachev@iem.fraunhofer.de</a></p>	
+			</div>
+		</div>
+		<!--- Contact end -->
+
+</body>
+
+</html>

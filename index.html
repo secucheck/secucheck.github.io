@@ -1,20 +1,158 @@
-<!doctype html>
-
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8">
+	<meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-  <title>SecuCheck</title>
-  <meta name="description" content="SecuCheck - Project Website">
-  <meta name="author" content="GoranPiskachev">
+    <!-- Title -->
+    <title>SecuCheck</title>
 
-  <link rel="stylesheet" href="css/styles.css?v=1.0">
+    <!-- Favicon -->
+    <link rel="icon" href="img/core-img/favicon.ico">
+
+    <!-- Core Stylesheet -->
+	<link rel="stylesheet" href="style.css">
+	<!-- Latest compiled and minified CSS-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	
+
 
 </head>
 
 <body>
-  <script src="js/scripts.js"></script>
-  This is the project website of the project SecuCheck under the program Software Campus. 
-  Work in progress ... 
+
+	<!-- Navigacion start -->
+	<div id="custom-bootstrap-menu" class="navbar navbar-default  navbar-fixed-top" role="navigation">
+		<div class="container-fluid">
+			<div class="navbar-header"><a class="navbar-brand" href="#"><img style="margin-top: -8px;" src="img/secu-logo.png"/></a>
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-menubuilder"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+				</button>
+			</div>
+			<div class="collapse navbar-collapse navbar-menubuilder">
+				<ul class="nav navbar-nav navbar-left">
+					<li><a class="active" href="#">Home</a></li>
+							<li><a href="index.html#about-section">About</a></li>
+							<li><a href="index.html#publications-section">Publications</a></li>
+							<li><a href="index.html#team-section">Team</a></li>
+							<li><a href="index.html#partners-section">Partners</a></li>
+							<li><a href="index.html#contact-section">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- Navigation end -->
+
+		<!--- About start -->
+		<div class="about" >
+			<div class="container about" id="about-section">
+				<div class="about-description">
+					<h1>Why SecuCheck?</h1>
+					<p>Static code analysis is a technology to detect various security vulnerabilities at implementation time. However, as studies show, developers reject <strong>static analysis tools</strong>, as they find them hard to configure such that they can operate efficiently in their application context. With their default parameters, most tools produce a high number of false warnings, while missing vulnerabilities that may be important. This demotivates the developers. The goal of this project is to reduce the gap between static analysis and software development, thereby improving the user experience of static analysis tools.</p>
+		
+					<a href="about.html" class="btn btn-action"><strong>Learn More</strong></a>
+				</div>
+			
+				<div class="about-image">
+					<img src="img/process.png" class="image responsive">
+					<h6>Overview of SecuCheck</h6>
+				</div>
+			</div>
+		</div>
+		<!--- About end -->
+	
+		<!--- Publication start -->
+		<div class="container publication" id="publications-section">
+			<h1>Publications</h1>
+			<div class="row">
+				<div class="column">
+					<p>There aren't any publications as yet, but project updates can be see on Twitter.</p>
+				</div>
+				<div class="column">
+					<a class="twitter-timeline" href="https://twitter.com/secucheck_swc?ref_src=twsrc%5Etfw">Project Updates by secucheck_swc</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+				</div>
+			</div>	
+		</div>
+		<!--- Publication end -->
+		
+		<!--- Team start -->
+		<div class="team" id="team-section">
+			<div class="container"> 
+			<h1 class="h-white">Team</h1>
+				<div class="team-content container">
+					<div class="team-card">
+						<img src="img/g.png" class="responsive team-image"/>
+						<h4 class="h-white">Goran Piskachev</h4>
+						<p>Project Manager</p>
+					</div>
+					<div class="team-card">
+						<img src="img/e.png" class="responsive team-image"/>
+						<h4 class="h-white">Prof. Eric Bodden</h4>
+						<p>Research Advisor</p>
+					</div>
+					<div class="team-card">
+						<img src="img/i.png" class="responsive"/>
+						<h4 class="h-white">Ingo Budde</h4>
+						<p>Developer</p>
+					</div>
+					<div class="team-card">
+						<img src="img/j.png" class="responsive"/>
+						<h4 class="h-white">Jan-Niclas Strüwer</h4>
+						<p>Developer</p>
+					</div>
+					<div class="team-card">
+						<img src="img/o.png" class="responsive"/>
+						<h4 class="h-white">Oshando Johnson</h4>
+						<p>Student Developer</p>
+					</div>
+					<div class="team-card">
+						<img src="img/j.png" class="responsive"/>
+						<h4 class="h-white">Johannes Späth</h4>
+						<p>Consultant</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--- Team end -->
+		
+		<!--- Partners start -->
+		
+		<div class="container partners" id="partners-section">
+		
+			<h1>Partners</h1>
+			
+			<div class="partner-logos">
+				<img src="img/bmbf.png" class="partners-image"/>
+				<img src="img/iem.png" class="partners-image"/>
+				<img src="img/sag.png" class="partners-image"/>
+				<img src="img/scampus.png" class="partners-image"/>
+			</div>
+			</div>
+		
+		<!--- Partners end -->	
+		
+		<!--- Contact start -->
+		<div class="contact"  id="contact-section">
+			<div class="container">
+				<h1 class="h-white">Contact</h1>
+				<p>Goran Piskachev<br>Fraunhofer-Institut für Entwurfstechnick Mechatronik<br>Abteilung Softwaretechnik und IT-Sicherheit<br>Zukunftsmeile 1<br>33102</p>
+
+				<p><strong>e-Mail:</strong> <a href="mailto:info.deercreative@gmail.com" class="email">goran.piskachev@iem.fraunhofer.de</a></p>	
+			</div>
+		</div>
+		<!--- Contact end -->
+	
+	<script type="text/javascript">
+  		$(document).ready(function() {
+	// get current URL path and assign 'active' class
+	var pathname = window.location.pathname;
+	$('.nav > li > a[href="'+pathname+'"]').parent().addClass('active');
+})
+	</script>
 </body>
+
 </html>

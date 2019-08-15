@@ -74,12 +74,28 @@
 			<div class="row">
 				<div class="column">
 					<ul>
-						<li>Interviews with Software Developers: <a href="https://github.com/secucheck/secucheck.github.io/blob/master/docs/SecuCheck_Interviews_Results.pdf">Summary</a> </li>
-						<li>Technical report: <a href="https://arxiv.org/abs/1907.02558">Integration of the Static Analysis Results Interchange Format in CogniCrypt</a> </li>
-						<li>Publication: <a href="https://piskachev.com/wp-content/uploads/2019/06/swan-paper.pdf">Codebase-Adaptive Detection of Security-Relevant Methods</a>, <a href="https://conf.researchr.org/details/issta-2019/issta-2019-Technical-Papers/17/Codebase-Adaptive-Detection-of-Security-Relevant-Methods"> International Symposium on Software Testing and Analysis 2019</a></li>
+						<li>Interviews with Software Developers
+            <ul>
+            <li>We interviewed 9 software developers from 5 companies to find out what developers think about existing tools for security checks, what are the existing problems, and what is their security awareness level. </li>
+            <li><a href="https://github.com/secucheck/secucheck.github.io/blob/master/docs/SecuCheck_Interviews_Results.pdf">Summary</a></li> 
+            </ul>
+            </li>
+						<li>Static Analysis Results Interchange Format (SARIF)
+            <ul>
+            <li>We integrated <a href="https://www.oasis-open.org/committees/sarif"> SARIF</a> into <a href="https://www.eclipse.org/cognicrypt/"> CogniCrypt</a> tool. We summarized the standard and documented our convertor to ease the integration of the standard in other static analysis tools. </li>
+            <li> Technical report: <a href="https://arxiv.org/abs/1907.02558">Integration of the Static Analysis Results Interchange Format in CogniCrypt</a></li>
+            </ul>
+            </li>
+            <li> SWAN: Security Methods for Weakness Detection
+            <ul>
+            <li>To detect specific security vulnerabilities, taint analyses must be configured with specific methods. For example, executeQuery() can be a sink for CWE-89 (SQL injection), but not for CWE-601 (open redirect). SWAN uses supervised machine-learning to automatically detect such methods from Java codebase and classifies them into different CWEs. SWAN_assist is an IntelliJ plugin that allows the developer to manually train the classifier through active learning and improve the precision of the approach.</li>
+            <li>Publication: <a href="https://piskachev.com/wp-content/uploads/2019/06/swan-paper.pdf">Codebase-Adaptive Detection of Security-Relevant Methods</a>, Goran Piskachev, Lisa Nguyen Quang Do, Eric Bodden, <a href="https://conf.researchr.org/details/issta-2019/issta-2019-Technical-Papers/17/Codebase-Adaptive-Detection-of-Security-Relevant-Methods">, International Symposium on Software Testing and Analysis 2019</a></li>
 						<li>Source code: SWAN and SWAN_assist <a href="https://github.com/secure-software-engineering/swan">[github link]</a></li>
-						<li>Demo-Video: SWAN and SWAN_assisst <a href="https://www.youtube.com/watch?v=nAExeTP1r_c">[youtube link]</a></li>
+						<li>Demonstration:  SwanAssist: Semi-Automated Detection of Code-Specific, Security-Relevant Methods, Goran Piskachev, Lisa Nguyen Quang Do, Oshando Johnson, and Eric Bodden, <a href="https://2019.ase-conferences.org/track/ase-2019-Demonstrations">Automated Software Engineering 2019</a> <a href="https://www.youtube.com/watch?v=fSyD3V6EQOY"> [video]</a> <a href="https://www.youtube.com/watch?v=nAExeTP1r_c">[long version video]</a></li>
 						<li>Technical report: <a href="https://www.hni.uni-paderborn.de/publikationen/publikationen/?tx_hnippview_pi1%5Bpublikation%5D=9859">Codebase-Adaptive Detection of Security-Relevant Methods</a> </li>
+            </ul>
+            </li>
+						
 					</ul>
 				</div>
 				<div class="column">

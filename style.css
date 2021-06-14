@@ -247,12 +247,12 @@ ul,ol{
 }
 
 .team-content {
-	display: inline-block;
+	display: flex;
 	text-align: center;
 	width: 100%;
     margin: 0 auto;
 	position: relative;
-	justify-content: space-between;
+	justify-content: center;
 }
 
 .team-content .team-card {

@@ -255,6 +255,20 @@ ul,ol{
 	justify-content: center;
 }
 
+@media screen and (max-width: 768px) {
+	.team-content {
+		justify-content: space-between;
+		display: inline-block;
+	}
+}
+
+@media screen and not (max-width: 768px) {
+	.team-content {
+		justify-content: center;
+		display: flex;
+	}
+}
+
 .team-content .team-card {
 	line-height: 0;
 	width: 180px;
